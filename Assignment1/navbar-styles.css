@@ -1,31 +1,41 @@
 .navbar-div {
+    display: flex;
+    justify-content: space-between;
     column-count: 2;
-    background-color: beige;
+    background-color: white;
     height: 7.76vh;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-title-div {
+    /* background-color: aqua; */
     margin: 0;
 }
 
 .navbar-title {
     color:#aa955c;
     font-weight: normal;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 15%;
-    background-color: aqua;
-    height:100%
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
 }
 
 .navbar-links-div {
-    background-color: bisque;
-    margin-right: 7%;
-    height:100%;
+    display: flex;
     align-items: center;
+    /* background-color: bisque; */
+    margin-right: 4%;
+    width: 40%;
 }
 
 .navbar-link {
     color: black;
-    font-size: small;
+    font-size:x-small;
     text-decoration: none;
+    text-align: center;
+    margin: auto;
+    /* background-color: cadetblue; */
 }
 
 .navbar-link:hover {
