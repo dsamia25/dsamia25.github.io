@@ -1,10 +1,10 @@
 .navbar-div {
     column-count: 2;
+    background-color: beige;
     padding-left: 32px;
     padding-right: 16px;
+    height: 56px;
     margin: 0;
-    background-color: beige;
-    height: 64px;
 }
 
 .navbar-title {
@@ -31,4 +31,8 @@
 
 .navbar-link:hover {
     color: #aa955c;
+}
+
+.sticky {
+    position: sticky;
 }
