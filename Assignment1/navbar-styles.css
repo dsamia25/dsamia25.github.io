@@ -9,33 +9,33 @@
 }
 
 .navbar-title-div {
-    /* background-color: aqua; */
-    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 10.67%;
+    min-width: 15%;
 }
 
 .navbar-title {
     color:#aa955c;
     font-weight: normal;
+    font-size:9.6px;
     text-align: center;
     vertical-align: middle;
-    margin: auto;
 }
 
 .navbar-links-div {
     display: flex;
     align-items: center;
-    /* background-color: bisque; */
-    margin-right: 4%;
-    width: 40%;
+    margin-right: 3.63%;
+    width: 40.5%;
 }
 
 .navbar-link {
     color: black;
-    font-size:x-small;
+    font-size:9.5px;
     text-decoration: none;
     text-align: center;
     margin: auto;
-    /* background-color: cadetblue; */
 }
 
 .navbar-link:hover {
