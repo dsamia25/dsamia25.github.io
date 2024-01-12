@@ -1,9 +1,7 @@
 .navbar-div {
     column-count: 2;
     background-color: beige;
-    padding-left: 32px;
-    padding-right: 16px;
-    height: 56px;
+    height: 7.76vh;
     margin: 0;
 }
 
@@ -12,21 +10,22 @@
     font-weight: normal;
     margin-top: auto;
     margin-bottom: auto;
+    margin-left: 15%;
     background-color: aqua;
+    height:100%
 }
 
 .navbar-links-div {
-    align-items: center;
-    justify-content: center;
     background-color: bisque;
+    margin-right: 7%;
+    height:100%;
+    align-items: center;
 }
 
 .navbar-link {
     color: black;
     font-size: small;
     text-decoration: none;
-    padding: 4px;
-    margin: auto;
 }
 
 .navbar-link:hover {
