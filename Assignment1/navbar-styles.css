@@ -1,0 +1,34 @@
+.navbar-div {
+    column-count: 2;
+    padding-left: 32px;
+    padding-right: 16px;
+    margin: 0;
+    background-color: beige;
+    height: 64px;
+}
+
+.navbar-title {
+    color:#aa955c;
+    font-weight: normal;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: aqua;
+}
+
+.navbar-links-div {
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+}
+
+.navbar-link {
+    color: black;
+    font-size: small;
+    text-decoration: none;
+    padding: 4px;
+    margin: auto;
+}
+
+.navbar-link:hover {
+    color: #aa955c;
+}
