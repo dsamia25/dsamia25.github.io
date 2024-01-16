@@ -10,6 +10,28 @@
     padding: 0;
 }
 
+/* TODO: text size, font, top margin? */
+.header-text {
+    text-align: center;
+}
+
+.services-row {
+    width: 100%;
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 40px;
+    justify-content: space-between;
+    background-color: aqua;
+}
+
+.services-background-div {
+    background-image: url("flower.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 body {
     padding: 0;
     margin: 0;
