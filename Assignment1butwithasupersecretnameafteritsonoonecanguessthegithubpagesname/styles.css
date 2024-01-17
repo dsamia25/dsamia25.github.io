@@ -5,7 +5,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 75vh;
+    height: 72.6vh;
     margin: 0;
     padding: 0;
 }
@@ -18,18 +18,22 @@
 .services-row {
     width: 100%;
     display: flex;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-top: 40px;
+    padding-left: 5.8%;
+    padding-right: 5.8%;
+    gap: 5.8%;
+    margin-top: 6.475vh;
     justify-content: space-between;
     background-color: aqua;
 }
 
-.services-background-div {
+.services-background-image {
     background-image: url("flower.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    text-align: center;
+    width: 30.5%;
+    color: white;
 }
 
 body {
