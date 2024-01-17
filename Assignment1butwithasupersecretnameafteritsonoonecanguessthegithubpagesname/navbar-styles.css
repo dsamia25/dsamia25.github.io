@@ -16,7 +16,7 @@
 }
 
 .navbar-title {
-    color:#aa955c;
+    color: var(--dijon-mustard);
     font-weight: normal;
     font-size:9.6px;
     text-align: center;
@@ -39,7 +39,7 @@
 }
 
 .navbar-link:hover {
-    color: #aa955c;
+    color: var(--dijon-mustard);
 }
 
 .sticky {

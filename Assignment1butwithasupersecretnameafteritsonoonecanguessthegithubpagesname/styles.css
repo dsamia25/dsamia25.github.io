@@ -1,6 +1,9 @@
+:root {
+    --dijon-mustard: #aa955c;
+}
 
 .background-image {
-    background-image: url("image3.png");
+    background-image: url("/img/image3.png");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -16,7 +19,7 @@
 }
 
 .services-row {
-    width: 100%;
+    width: auto;
     display: flex;
     padding-left: 5.8%;
     padding-right: 5.8%;
@@ -27,13 +30,22 @@
 }
 
 .services-background-image {
-    background-image: url("flower.png");
+    background-image: url("/img/flower.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     text-align: center;
     width: 30.5%;
     color: white;
+}
+
+.footer-div {
+    background-color: var(--dijon-mustard);
+    margin-left: 5.8%;
+    margin-right: 5.8%;
+    margin-top: 11vh;
+    height: 20vh;
+    width:auto;
 }
 
 body {
