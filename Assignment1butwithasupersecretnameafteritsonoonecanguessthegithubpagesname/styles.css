@@ -18,15 +18,14 @@
     text-align: center;
 }
 
+.body-div {
+    margin: 5.8%;
+}
+
 .services-row {
     width: auto;
     display: flex;
-    padding-left: 5.8%;
-    padding-right: 5.8%;
-    gap: 5.8%;
-    margin-top: 6.475vh;
     justify-content: space-between;
-    background-color: aqua;
 }
 
 .services-background-image {
@@ -39,13 +38,55 @@
     color: white;
 }
 
+.gallery-div {
+    background-image: url("/img/image2.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    height: auto;
+}
+
 .footer-div {
     background-color: var(--dijon-mustard);
-    margin-left: 5.8%;
-    margin-right: 5.8%;
     margin-top: 11vh;
     height: 20vh;
     width:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.footer-contact-info-columns-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: x-small;
+    margin-top: auto;
+    margin-bottom: auto;
+    column-gap: 5px;
+}
+
+.vertical-divider {
+    min-height: 100%;
+    max-height: 100vh;
+    margin: 0;
+    color:white;
+}
+
+.book-consultation-button {
+    font-size: x-small;
+    border-width: 0.8px;
+    border-color: white;
+    border-style: solid;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 6px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 body {
