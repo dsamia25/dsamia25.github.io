@@ -6,6 +6,8 @@
     height: 7.76vh;
     margin: 0;
     padding: 0;
+    position: fixed;
+    top:0;
 }
 
 .navbar-title-div {

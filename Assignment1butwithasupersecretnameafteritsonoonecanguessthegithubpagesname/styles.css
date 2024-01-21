@@ -2,7 +2,7 @@
     --dijon-mustard: #aa955c;
 }
 
-.background-image {
+.header-background-image {
     background-image: url("/img/image3.png");
     background-attachment: fixed;
     background-size: cover;
@@ -16,6 +16,12 @@
 /* TODO: text size, font, top margin? */
 .header-text {
     text-align: center;
+    font-family: "Cormorant", serif;
+    letter-spacing: 10px;
+    font-weight: bold;
+    font-size: 2.5em;
+    line-height: 150%;
+    margin-top: 17%
 }
 
 .body-div {
@@ -37,6 +43,23 @@
     text-align: center;
     width: 30.5%;
     color: white;
+}
+
+.testimonial-section {
+    background-color: aliceblue;
+}
+
+p.testimonial-text {
+    color:black;
+    font-size: 1.8em;
+    font-family: "Cormorant", serif;
+    text-align: center;
+}
+
+h3.testimonial-names {
+    color: var(--dijon-mustard);
+    font-size: x-small;
+    text-align: center;
 }
 
 .gallery-div {
