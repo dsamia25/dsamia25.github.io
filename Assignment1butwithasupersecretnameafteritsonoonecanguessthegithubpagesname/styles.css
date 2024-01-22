@@ -79,9 +79,7 @@ a.navbar-link {
 }
 
 .body-div {
-    /* margin: 5.8%; */
-    padding: 5.8%;
-    margin: auto;
+    margin: 5.8%;
     max-width: 850px;
 }
 
