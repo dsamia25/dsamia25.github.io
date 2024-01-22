@@ -3,7 +3,6 @@
     <!-- Import css -->
     <head>
         <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="navbar-styles.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant|Catamaran">
     </head>
 
@@ -34,25 +33,22 @@
 
             <div class="body-div">
                 <!-- Row with 'Services' box and image -->
-                <!-- TODO: Make the row shorter. Currently too tall. -->
-                <!-- TODO: Crop the image to be shorter. Currently too square-like. -->
                 <div class="services-row">
                     <!-- 'Services' box section -->
-                    <div class="services-background-image">
-                        <!-- TODO: Font, font size. -->
-                        <h2>SERVICES</h2>
-                        <!-- TODO: Font, font size. -->
-                        <p>Turn the dream into a reality</p>
-                        <!-- TODO: Button format (borders andthings). -->
-                        <h3 class="card-button">DISCOVER</h3>
+                    <div class="services-card">
+                        <div class="services-card-text-container">
+                            <h1 class="services-card-text" style="margin-top: 85px;">SERVICES</h1>
+                            <p class="services-card-text" style="margin-top: 80px;">Turn the dream into a<br>reality</p>
+                            <a href="page2.html" class="card-button">DISCOVER</a>
+                        </div>
                     </div>
                     <!-- Image section -->
-                    <img src="/img/image1.png" alt="People looking at lights or something." width="auto">
+                    <img class="services" src="/img/image1.png" alt="People looking at lights or something.">
                 </div>
 
                 <!-- Testimonial section -->
                 <div class="testimonial-section">
-                    <!-- TODO: Replace the font on the quotation mark line with one with a more curly apostraphy. -->
+                    <!-- TODO: Fix the vertical height between the " and the rest of the things. -->
                     <p class="testimonial-text" style="font-family: Catamaran;">"</p>
                     <p class="testimonial-text">I'm a testimonial. Click to edit<br>this text and say something nice<br>about you and your services.</p>
                     <h3 class="testimonial-names">Jimmy and Janice</h3>
@@ -61,9 +57,11 @@
                 <!-- Background image with 'Gallery' box overlayed on the right side. -->
                 <div class="gallery-div">
                     <div class="gallery-card">
-                        <h1 class="card" style="margin-top: 70px">GALLERY</h1>
-                        <p class="card" style="margin-top: 70px">Unforgettable<br>Memories</p>
-                        <h3 class="card-button">DISCOVER</h3>
+                        <div class="services-card-text-container">
+                            <h1 class="gallery-card-text" style="margin-top: 70px">GALLERY</h1>
+                            <p class="gallery-card-text" style="margin-top: 70px">Unforgettable<br>Memories</p>
+                            <a href="page2.html" class="card-button">DISCOVER</a>
+                        </div>
                     </div>
                 </div>
 
@@ -71,15 +69,15 @@
                 <div class="footer-div">
                     <!-- Contact columns. Hard coded the break in the .com part. -->
                     <div class="footer-contact-info-columns-div">
-                        <p>500 Temple Street<br>San Francisco<br>CA 91455</p>
+                        <p class="footer-text">500 Temple Street<br>San Francisco<br>CA 91455</p>
                         <hr class="vertical-divider">
-                        <p>Tel: 123-555-1212<br>Fax: 123-555-1213<br>info@mainevents.c<br>om</p>
+                        <p class="footer-text">Tel: 123-555-1212<br>Fax: 123-555-1213<br>info@mainevents.c<br>om</p>
                         <hr class="vertical-divider">
-                        <p>© 2023 by Main Events.</p>
+                        <p class="footer-text">© 2023 by Main Events.</p>
                     </div>
 
                     <!-- Book consultation button. -->
-                    <p class="book-consultation-button">BOOK A CONSULTATION</p>
+                    <a href="page2.html" class="card-button">BOOK A CONSULTATION</a>
                 </div>
             </div>  
         </div>
