@@ -11,7 +11,7 @@
     margin: 0;
     padding: 0;
     position: fixed;
-    top:0;
+    top: 0;
 }
 
 .navbar-title-div {
@@ -24,7 +24,7 @@
 .navbar-title {
     color: var(--dijon-mustard);
     font-weight: normal;
-    font-size:9.6px;
+    font-size: 9.6px;
     text-align: center;
     vertical-align: middle;
 }
@@ -59,7 +59,7 @@ a.navbar-link {
     background-repeat: no-repeat;
     background-position: center;
     height: 550px;
-    width:100%;
+    width: 100%;
     max-width: 850px;
     margin-top: 0;
     margin-bottom: 0;
@@ -79,7 +79,9 @@ a.navbar-link {
 }
 
 .body-div {
-    margin: 5.8%;
+    /* margin: 5.8%; */
+    padding: 5.8%;
+    margin: auto;
     max-width: 850px;
 }
 
