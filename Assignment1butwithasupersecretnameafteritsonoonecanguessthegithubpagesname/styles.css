@@ -80,6 +80,7 @@ a.navbar-link {
 
 .body-div {
     margin: 5.8%;
+    max-width: 850px;
 }
 
 .services-row {
@@ -145,15 +146,15 @@ a.card-button {
 }
 
 img.services {
-    width:450px;
+    width:425px;
     height:100%;
     object-fit: cover;
 }
 
 .testimonial-section {
     height: 40vh;
-    margin-top: 8%;
-    margin-bottom: 8%;
+    margin-top: 100px;
+    margin-bottom: 100px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -164,12 +165,15 @@ p.testimonial-text {
     font-size: 1.8em;
     font-family: "Cormorant", serif;
     text-align: center;
+    font-weight: 600;
+    margin: 0;
 }
 
 h3.testimonial-names {
     color: var(--dijon-mustard);
     font-size: x-small;
     text-align: center;
+    margin-top: 40px;
 }
 
 .gallery-div {
