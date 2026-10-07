@@ -1,34 +1,155 @@
 <!DOCTYPE html>
+<script>
+  class Project {
+    constructor(name, year, org, role, link, lang, desc) {
+      this.name = name; this.year = year; this.org= org; this.role = role; this.link = link; this.lang = lang; this.desc = desc;
+    }
+
+    MakeElem() {
+      console.log("making project element - " + this.name);
+      const item = document.createElement("li")
+      item.setAttribute("class", ".proj-list-item");
+
+      const frag = document.createDocumentFragment();
+      const art = document.createElement("article");
+      art.setAttribute("class", ".proj-art");
+
+      const name = document.createElement("h3");
+      name.innerHTML = this.name;
+      name.setAttribute("class", ".proj-name");
+      frag.appendChild(name);
+
+      const year = document.createElement("h4");
+      year.innerHTML = this.year;
+      year.setAttribute("class", ".proj-year");
+      frag.appendChild(year);
+
+      const org = document.createElement("h4");
+      org.innerHTML = this.org.abbr;
+      org.setAttribute("class", ".proj-org " + ".org-" + org);
+      frag.appendChild(org);
+
+      const role = document.createElement("h4");
+      role.innerHTML = this.role;
+      org.setAttribute("class", ".proj-role");
+      frag.appendChild(role);
+
+      if (this.link != "") {
+        const link = document.createElement("a");
+        link.innerHTML = this.name;
+        link.setAttribute("target", "_blank");
+        link.href = this.link;
+        link.setAttribute("class", ".proj-link");
+        frag.appendChild(link);
+      }
+
+      if (this.lang != "") {
+        const lang = document.createElement("p");
+        lang.innerHTML = this.lang;
+        lang.setAttribute("class", ".proj-lang");
+        frag.appendChild(lang);
+      }
+
+      if (this.desc != "") {
+        const desc = document.createElement("p");
+        desc.innerHTML = this.desc;
+        desc.setAttribute("class", ".proj-desc");
+        frag.appendChild(desc);
+      }
+
+      // add to list
+      const projectsList = document.getElementById("projects-list");
+      art.appendChild(frag);
+      item.appendChild(art);
+      projectsList.appendChild(item);
+    }
+  }
+
+  class Organization {
+    constructor(name, abbr) {
+      this.name = name; this.abbr = abbr;
+    }
+  }
+
+  const orgs = {
+    usf: new Organization("University of San Francisco", "USF"),
+    usc: new Organization("University of Southern California", "USC"),
+    isi: new Organization("Information Sciences Institute", "ISI"),
+    moxi: new Organization("Big Moxi Games", "Big Moxi"),
+    personal: new Organization("Personal", "Personal")
+  }
+
+  const projects = [
+    new Project("Bikini Bottom Drive", 2025, orgs.moxi, "Gameplay Programmer",
+      "https://www.fortnite.com/@spongebobplay/5218-8692-0070", 
+      "Verse, UEFN, Lore", ""),
+    new Project("Battle Kings", 2026, orgs.moxi, "Gameplay Programmer", 
+      "https://www.fortnite.com/@puremoxi/1811-2641-4940", 
+      "Verse, UEFN, Lore", ""),
+    new Project("Party Royale", 2026, orgs.moxi, "Gameplay Programmer", 
+      "https://www.fortnite.com/@puremoxi/1646-6782-5665",
+      "Verse, UEFN, Lore", ""),
+    new Project("Dark Escape", 2025, orgs.moxi, "Gameplay Programmer", 
+      "https://www.fortnite.com/@puremoxi/7211-1501-2591",
+      "Verse, UEFN, Python, SQL, Lore", ""),
+    new Project("Brick Raiders", 2025, orgs.moxi, "Gameplay Programmer", 
+      "https://www.fortnite.com/@puremoxi/6064-7188-7355",
+      "Verse, UEFN, Lore", ""),
+    new Project("Warden's Pit", 2025, orgs.moxi, "Gameplay Programmer", 
+      "https://www.fortnite.com/@puremoxi/0361-3596-8415", 
+      "Verse, UEFN, Lore", ""),
+    new Project("Youtube Bot Detection Model", 2025, orgs.usc, "Student",
+      "https://github.com/dsamia25/YoutubeBotDetector2",
+      "Python, Git", ""),
+    new Project("Froggy Defense", 2022, orgs.personal, "Designer and Programmer",
+      "https://github.com/dsamia25/Froggy-Defense",
+      "C#, Unity Engine, Git", ""),
+    new Project("Demonstration of Metrics for Self-Healing and Self-Reconfiguration in a Monolithic and Segmented Robotic System", 2026, orgs.isi, "Graduate Researcher",
+      "https://arc.aiaa.org/doi/10.2514/6.2026-2242",
+      "Python, Git", ""),
+    new Project("Memory Allocator", 2025, orgs.personal, "Programmer",
+      "https://github.com/dsamia25/NewMemoryAllocator",
+      "C, Git", ""),
+    new Project("Search Engine", 2021, orgs.usf, "Student",
+      "",
+      "Java, Git", "repo is private, ask about code."),
+    new Project("Go-Playing Agent", 2024, orgs.usc, "Student",
+      "",
+      "Python, Git", "repo is private, ask about code."),
+    new Project("TSP Genetic Algorithm", 2024, orgs.usc, "Student",
+      "",
+      "Python, Git", "repo is private, ask about code."),
+    new Project("Stock-trading Webapp", 2024, orgs.usc, "Student",
+      "",
+      "Typescript, Angular, Python, Flask, Google Cloud, MongoDB, Swift, SwiftUI, Git", "repo is private, ask about code."),
+    new Project("Command-line Shell", 2021, orgs.usf, "Student",
+      "",
+      "C, Linux, Git", "repo is private, ask about code."),
+  ]
+
+  function BuildProjects() {
+    projects.forEach((proj) => {
+      proj.MakeElem();
+    });
+  }
+</script>
+
 <html>
   <body>
-    <div id="experience/education">
-      <h2>experience</h2>
-      <p>please <a href="https://www.linkedin.com/in/david-samia">check out my linkedin</a></p>
+    <div id="experience">
+      <h2>experience/education</h2>
+      <p>please <a target="_blank" href="https://www.linkedin.com/in/david-samia">check out my linkedin</a></p>
     </div>
-    <div id="projects">
+    <div id="projects", class=".proj-list">
+      <h2>projects</h2>
       <p>these arent super organized or up to date</p>
-      <div id="featured">
-        <h2>featured</h2>
-        <p>these are projects i like to talk about and learned a lot from</p>
-        <ul>
+      <ul id="projects-list">
         
-        </ul>
-      </div>
-      <div id="personal">
-        <h2>personal</h2>
-        <p>i made these for personal learning purposes or for fun</p>
-        <ul>
-        
-        </ul>
-      </div>
-      <div id="academic">
-        <h2>academic</h2>
-        <p>projects from school</p>
-        <ul>
-        
-        </ul>
-        </div>
+      </ul>
     </div>
   </body>
+  <script>
+    BuildProjects();
+  </script>
 </html>
 
